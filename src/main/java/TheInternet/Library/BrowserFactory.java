@@ -11,7 +11,8 @@ public class BrowserFactory {
         try {
             System.setProperty("webdriver.chrome.driver", "./src/main/resources/chromedriver.exe");
             driver = new ChromeDriver();
-            driver.get("https://qa.mpowered-health.com/");
+            //apply the url
+            driver.get("");
             System.out.println("Started Chromedriver...");
         }
         catch(Exception ex)
